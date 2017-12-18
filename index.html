@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Manchester United</title>
+   <link href="CSS/style.css" rel="stylesheet">
+   <link href="CSS/placeholder.css" rel="stylesheet">
+   <link href="CSS/slider.css" rel="stylesheet">
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous">
+   </script>
+ </head>
+ <body>
+	<ul id="navbar">
+		<li><a href="#">Главная</a></li>
+		<li><a href="#">Новости</a></li>
+		<li><a href="#">Расписание</a></li>
+		<li><a href="#">Команда</a>
+		<li><a href="#">Эксклюзив</a>
+		<li><a href="#">Легенды</a>
+		<li><a href="#">История</a>
+		<li><a href="#">Фото</a>
+		<li><a href="#">Видео</a>
+  <div id="burgerMenu"> <li><button id="dropDown" onclick="burgerMenu()">Легенды</button></div>
+    <ul id="drop" style= "display: none";>
+	  <li><a href="#">Сэр Алекс Фергюсон</a></li>
+      <li><a href="#">Раян Гигз</a></li>
+      <li><a href="#">Эрик Кантона</a></li>
+      <li><a href="#">Пол Скоулз</a></li>
+	  <li><a href="#">Гарри Нэвилл</a></li>
+	  <li><a href="#">Дэвид Бэкхем</a></li>
+	  <li><a href="#">Джордж Бэст</a></li>
+    </ul>
+	  </li>
+	</ul>
+	
+	
+	<div id = "open_window" style= "display: none;">
+		<form class= "input_window">
+		<input type="button" value="Закрыть" id="closet" onclick="close1()">
+		<p><b>Войти</b></p>
+		<label for="login-field">Новый логин</label>
+		<input type="text" name="login" id="login-field">
+		<br>
+		<label for="password-field">Новый пароль</label>
+		<input type="text" name="password" id="password-field" value="*******">
+		<input type="button" value="Зарегистрироваться">
+		</form>
+	</div>
+	
+	<div id = "open_window2" style= "display: none;">
+		<form class= "input_window2">
+		<input type="button" value="Закрыть" id="closet" onclick="close2()">
+		<p><b>Зарегестрироватся</b></p>
+		<label for="login-field">Ваш логин</label>
+		<input type="text" name="login" id="login-field">
+		<br>
+		<label for="password-field">Ваш пароль</label>
+		<input type="text" name="password" id="password-field" value="*******">
+		<input type="button" value="Зарегистрироваться">
+		</form>
+	</div>
+	
+	<div id = "button12">
+	
+		<div id = "enter" onclick="sign_in()">
+			<button>Войти</button>
+		</div>
+	
+		<div id = "registration" onclick="sign_on()">
+			<button>Зарегестрироватся</button>
+		</div>
+		
+	</div>
+
+	<ul id="drop_menu">
+       <li class="harmonic">Составы
+        <ul style="display: none">
+         <li>Season 2013/2014</li>
+         <li>Season 2014/2015</li>
+         <li>Season 2015/2016</li>
+         <li>Season 2016/2017</li>
+        </ul>
+       </li>
+       <li class="harmonic">Трофеи
+        <ul style="display: none">
+         <li>Season 2013/2014</li>
+         <li>Season 2014/2015</li>
+         <li>Season 2015/2016</li>
+         <li>Season 2016/2017</li>
+        </ul>
+       </li>
+       <li class="harmonic">События
+        <ul style="display: none">
+         <li>Season 2013/2014</li>
+         <li>Season 2014/2015</li>
+         <li>Season 2015/2016</li>
+         <li>Season 2016/2017</li>
+        </ul>
+       </li>
+      </ul>
+	
+	
+	
+
+	<!--<form action="" method="post" class="search">
+		<input type="search" name="" placeholder="поиск по сайту" class="input"/>
+		<input type="submit" name="" value="" class="submit"/>
+    </form>-->
+	
+	<div id="weather">
+		<div id="minfin-informer-m1Fn-currency">Загружаем <a href="https://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="150" height="120" fram'+'eborder="0" src="https://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:150px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+	</div>
+	
+	<div id="slid">
+		<img src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911632arrowleft2.png" id="leftbutton">
+		<img id="displaySlide">
+		<img src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640arrowright2.png" id="rightbutton">
+    </div>
+	
+	<div id="parse_news"></div>
+	
+	
+	<div id = "control">
+		<div class = "circle" id = "left_button"></div>
+		<div class = "circle" id = "press"></div>
+		<div class = "circle" id = "right_button"></div>
+	</div>
+
+	<div id="video">
+		<iframe width="300" height="150" src="https://www.youtube.com/embed/WNtQynYbxpY" frameborder="0" gesture="media" allowfullscreen></iframe>
+	</div>
+	
+  <script src=Script/script.js></script>
+ </body>
+</html>
