@@ -227,8 +227,8 @@ input[type="search"] {
 
 #drop_menu {
 	position: absolute;
-	left: 45%;
-	top: 50;
+	left: 50%;
+	top: 20%;
 }
 
 .harmonic {
